@@ -16,3 +16,31 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+To avoid spending more time than expected for this challenge, I'm creating 2 simple tickets for this task. I would create more tickets or describe them better in a normal working situation, as I could ask colleagues for more information about the implementation of the `getShiftsByFacility` and `generateReport` functions, as well as the database implementation.
+
+### Ticket #1 - add the ability for Facilities to save their own custom ids for each Agent they work with
+
+You need to add the ability for Facilities to save their own custom ids for each Agent they work with.
+
+**Implementation details**
+Use a library like uuid to generate the new ids.
+
+**Time/effort estimates**
+2 hours.
+
+**Acceptance criteria**
+Facilities can save their own custom ids for each Agent they work with.
+
+### Ticket #2 - use custom ids when generating reports for Facilities
+
+Now that Facilities can save their own custom ids for each Agent they work with, use that custom ids when generating reports for Facilities.
+
+**Implementation details**
+Update the `generateReport` function to use the custom ids for each Agent rather than their internal database ids.
+
+**Time/effort estimates**
+1 hour.
+
+**Acceptance criteria**
+Reports are using the custom ids for each Agent rather than their internal database ids.
